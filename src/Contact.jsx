@@ -1,30 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
-    const linkedInUrl = "https://www.linkedin.com/in/maicol%C3%A1vila-developer-junior/";
-    const DownloadCurriculum = "Curriculum Maicol Avila_compressed.pdf";
+  const linkedInUrl = "https://www.linkedin.com/in/maicol%C3%A1vila-developer-junior/";
+  const GitHub = "https://github.com/MaicolAvila00";
+  const DownloadCurriculum = 'Curriculum Maicol Avila';
+  const {email} = useState('maicol4vila00@gmail.com'); 
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(email)
+      .then(() => {
+        alert('Correo copiado al portapapeles');
+      })
+      .catch((error) => {
+        console.error('Error al copiar correo:', error);
+      });
+  };
+
   return (
     <div className="contact">
       <h2>Contact</h2>
+
       <form>
+        
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <label htmlFor="message">Email: maicol4vila00@gmail.com</label>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit">Send</button>
+
+        <button type="button" onClick={handleCopyEmail}>Copy Email</button>
       </form>
+
       <div className="social-links">
         <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href={DownloadCurriculum} target="_blank" rel="noopener noreferrer">Download Curriculum</a>
+        <a href={GitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href={'./pdfs/'+DownloadCurriculum+ '.pdf'} download={DownloadCurriculum+'.pdf'} className='btn-download'>
+        Download Curriculum
+        </a>
       </div>
     </div>
   );
