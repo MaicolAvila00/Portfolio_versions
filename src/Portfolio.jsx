@@ -28,7 +28,7 @@ const Portfolio = () => {
         </section>
       </main>
       <footer>
-        <p>&copy; 2024 My Portfoil. Todos los derechos reservados.</p>
+        <p>&copy; 2024 My Portfolio. all rights reserved.</p>
       </footer>
     </div>
   );

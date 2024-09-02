@@ -31,7 +31,7 @@ const Projects = () => {
     },
 
     {card: {
-       title: " This Page 'My Portofolio'", 
+       title: " This Page 'My Portfolio'", 
       image: PageWeb,   
       link: 'https://github.com/MaicolAvila00/Portofolio_versions'
     },    
