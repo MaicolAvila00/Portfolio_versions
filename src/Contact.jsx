@@ -4,11 +4,7 @@ import React, { useState } from 'react';
 const Contact = () => {
   const linkedInUrl = "https://www.linkedin.com/in/maicol%C3%A1vila-developer-junior/";
   const GitHub = "https://github.com/MaicolAvila00";
-<<<<<<< HEAD
   const DownloadCurriculum = "https://vercel.com/Curriculum Maicol Avila.pdf"; 
-=======
-  const DownloadCurriculum = "/public/pdf/Curriculum Maicol Avila.pdf"; 
->>>>>>> 46f556b001d991d0eb37cc0bfe0eb16740729cda
   const {email} = useState('maicol4vila00@gmail.com'); 
 
   const handleCopyEmail = () => {
