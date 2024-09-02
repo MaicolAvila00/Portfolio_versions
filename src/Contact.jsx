@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const Contact = () => {
   const linkedInUrl = "https://www.linkedin.com/in/maicol%C3%A1vila-developer-junior/";
   const GitHub = "https://github.com/MaicolAvila00";
-  const DownloadCurriculum = "https://vercel.com/maicol-avilas-projects/portofolio_v1/Curriculum Maicol Avila.pdf"; 
+  const DownloadCurriculum = "/public/pdf/Curriculum Maicol Avila.pdf"; // Asigna la ruta del archivo PDF a la constante
   const {email} = useState('maicol4vila00@gmail.com'); 
 
   const handleCopyEmail = () => {
