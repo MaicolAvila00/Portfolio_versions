@@ -33,7 +33,7 @@ const Projects = () => {
     {card: {
        title: " This Page 'My Portofolio'", 
       image: PageWeb,   
-      link: 'https://types-tau.vercel.app/'
+      link: 'https://github.com/MaicolAvila00/Portofolio_versions'
     },    
     }
    ];
