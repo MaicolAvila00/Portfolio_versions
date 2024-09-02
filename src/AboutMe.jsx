@@ -1,6 +1,7 @@
 import React from 'react';
 
 const AboutMe = () => {
+  //Section About Me
   return (
     <div className="about-me">
       <h2>About Me</h2>
@@ -12,6 +13,7 @@ const AboutMe = () => {
       <div className="skills-section">
         <h3>Lenguaje Programing</h3>
         <div className="skills-container">
+          
           <div className="skill-category">
             <h4>Frontend</h4>
             <ul>
@@ -22,35 +24,45 @@ const AboutMe = () => {
               <li>React</li>
             </ul>
           </div>
+
           <div className="skill-category">
             <h4>Backend</h4>
             <ul>
               <li>Node.js</li>
-              <li>Python</li>
               <li>Java</li>
               <li>PHP</li>
+              <li>C++</li>
+              <li>.Net</li>
+              <li>Python</li>
+              <li>C#</li>
+              <li>Kotlin</li>
+
             </ul>
           </div>
+
           <div className="skill-category">
-            <h4>Bases de Datos</h4>
+            <h4>Data Base</h4>
             <ul>
               <li>MySQL</li>
-              <li>MongoDB</li>
               <li>PostgreSQL</li>
+              <li>Oracle</li>
               <li>Firebase</li>
             </ul>
           </div>
+        
         </div>
       </div>
       
       <div className="additional-skills">
-        <h3>Otras Habilidades</h3>
+        <h3>Other skills</h3>
         <ul>
-          <li>Git / Control de versiones</li>
-          <li>Metodologías Ágiles (Scrum)</li>
-          <li>Diseño Responsivo</li>
-          <li>Optimización de rendimiento web</li>
-          <li>Accesibilidad web</li>
+          <li>Version control (Git)</li>
+          <li>Agile methodologies (Scrum)</li>
+          <li>responsive design</li>
+          <li>performance optimization web</li>
+          <li>Web accessibility</li>
+          <li>TypeScript</li>
+
         </ul>
       </div>
     </div>

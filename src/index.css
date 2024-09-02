@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #6c5ce7c0;
+  --primary-color: #2D7D87;
   --secondary-color: #00cec9;
   --accent-color: #fd79a8;
-  --background-color: #1f6363;
+  --background-color: #2E565C;
   --text-color: #2d3436;
-  --card-background: #868686b0;
+  --card-background:#323B3C;
 }
 
 body {
@@ -96,12 +96,7 @@ h2 {
   display: inline-block;
 }
 
-/* Sobre mí */
-.about-me p {
-  letter-spacing: -0.8px;
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
+/*About me */
 
 .about-me ul {
   list-style-type: none;
@@ -127,10 +122,12 @@ h2 {
 }
 /* Estilos para AboutMe */
 .about-me p {
-  color: rgba(3, 238, 255, 0.897);
+  color: rgb(255, 255, 255);
   font-size: 1.4rem;
-  line-height: 1.8;
+  line-height: 1.5;
   margin-bottom: 2rem;
+  text-align: center;
+  
 }
 
 .skills-section, .additional-skills {
