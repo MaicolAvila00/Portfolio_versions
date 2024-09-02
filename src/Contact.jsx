@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
+
 const Contact = () => {
   const linkedInUrl = "https://www.linkedin.com/in/maicol%C3%A1vila-developer-junior/";
   const GitHub = "https://github.com/MaicolAvila00";
-  const DownloadCurriculum = 'Curriculum Maicol Avila';
+  const DownloadCurriculum = "/public/pdf/Curriculum Maicol Avila.pdf"; // Asigna la ruta del archivo PDF a la constante
   const {email} = useState('maicol4vila00@gmail.com'); 
 
   const handleCopyEmail = () => {
@@ -32,9 +33,9 @@ const Contact = () => {
       <div className="social-links">
         <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href={GitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href={'./pdfs/'+DownloadCurriculum+ '.pdf'} download={DownloadCurriculum+'.pdf'} className='btn-download'>
+        <a href={DownloadCurriculum} download="Curriculum Maicol Avila.pdf" className='btn-download'>
         Download Curriculum
-        </a>
+      </a>
       </div>
     </div>
   );
